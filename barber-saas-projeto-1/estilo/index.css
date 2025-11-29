@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --color01:#252526;
+    --color02:#575859;
+    --color03:#8B8B8C;
+    --color04:#D9D9D9;
+    --color05:#0D0D0D;
+
+    --font-tittles01:"Bebas Neue", sans-serif;
+    --font-padrao:"Noto Sans", sans-serif;
+    --font-tittles02:"Julius Sans One", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+    background-color: var(--color05);
+}
+ul{
+    list-style-type: none;
+}
+::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+    @media screen and (orientation:portrait) {
+        main{
+            background-color: var(--color01);
+            display: block;
+            height: 500px;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 25px;
+            box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.274);
+        }
+        main > .banner{
+            background-image: url("../imagens/banner-v2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+            height: 150px;
+            padding: 10px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .banner > h1{
+            position: relative;
+            top: 30px;
+            text-align: center;
+            color: yellow;
+            font-family: var(--font-tittles02);
+            font-weight: 500;
+            font-size: 2.3em;
+        }
+        .banner > p{
+            position: relative;
+            top: 20px;
+            text-align: center;
+            color: white;
+            font-family:var(--font-padrao);
+            font-weight: 200;
+            font-size: 1.2em;
+        }
+        .banner > h1, p{
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.484);
+        }
+        .info{
+            padding: 20px;
+        }
+        .info > h2, ul{
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.145);
+        }
+        .info > h2{
+            text-align: center;
+            color: white;
+            font-family: var(--font-padrao);
+            font-weight: 300;
+            font-size: 1.5em;
+        }
+        .info > ul{
+            color: white;
+            font-family: var(--font-padrao);
+            font-weight: 100;
+            font-size: 0.9em;
+            border-left: 2px solid var(--color03);
+        }
+        .info > ul > li{
+            padding: 5px;
+        }
+        .info > a{
+            display: block;
+            position: relative;
+            top: 30px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-family: var(--font-padrao);
+            font-weight: 200;
+            font-size: 1.2em;
+            border: 1px solid  white;
+            border-radius: 30px;
+        }
+        .info > a:hover{
+            background-color: rgba(255, 255, 255, 0.354);
+        }
+
+    }
